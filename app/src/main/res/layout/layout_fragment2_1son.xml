@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <Button
+    android:id="@+id/fragment2_button1"
+    android:layout_margin="10dp"
+    android:layout_marginLeft="25dp"
+    android:text="积分榜"
+    android:textColor="#ff0101"
+    android:background="#016BFF"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Button
+    android:id="@+id/fragment2_button2"
+    android:layout_margin="10dp"
+    android:layout_marginLeft="25dp"
+    android:textColor="#ff0101"
+    android:text="射手榜"
+    android:background="#f16022"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</LinearLayout>
+    <View
+    android:background="#ddd"
+    android:layout_width="wrap_content"
+    android:layout_height="0.2dp"></View>
+<FrameLayout
+    android:layout_weight="8"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+            android:id="@+id/fragment2_1son_t1"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="排名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+            android:id="@+id/fragment2_1son_t2"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="球队"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+            android:id="@+id/fragment2_1son_t3"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="赛程"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+            android:id="@+id/fragment2_1son_t4"
+            android:textSize="13dp"
+            android:layout_marginLeft="20dp"
+            android:text="胜- 平 -负"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="净胜球"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="积分"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+        android:background="#ddd"
+        android:layout_width="wrap_content"
+        android:layout_height="0.2dp"></View>
+        <LinearLayout
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/frament2son_refreshlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment2son_recyclerview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/fragment2_1son_t11"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:text="排名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment2_1son_t22"
+                android:textSize="15dp"
+                android:layout_marginLeft="30dp"
+                android:text="球星名字"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment2_1son_t33"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:text="球队名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment2_1son_t44"
+                android:textSize="13dp"
+                android:layout_marginLeft="20dp"
+                android:text="进球数"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:text="点球数"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--<TextView-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:text="点球数"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        </LinearLayout>
+        <View
+            android:background="#ddd"
+            android:layout_width="wrap_content"
+            android:layout_height="0.2dp"></View>
+        <LinearLayout
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/frament2son_refreshlayout11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment2son_recyclerview11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+        <!--<Button-->
+            <!--android:id="@+id/fragment2_button1"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:text="积分榜"-->
+            <!--android:textColor="#ff0101"-->
+            <!--android:background="#016BFF"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<Button-->
+            <!--android:id="@+id/fragment2_button2"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:textColor="#ff0101"-->
+            <!--android:text="射手榜"-->
+            <!--android:background="#f16022"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--<View-->
+        <!--android:background="#ddd"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0.2dp"></View>-->
+
+   <!--<LinearLayout-->
+       <!--android:orientation="horizontal"-->
+       <!--android:layout_width="wrap_content"-->
+       <!--android:layout_height="wrap_content">-->
+       <!--<FrameLayout-->
+           <!--android:layout_weight="8"-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="match_parent">-->
+    <!--<TextView-->
+        <!--android:id="@+id/fragment2_1son_t1"-->
+        <!--android:textSize="15dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:text="排名"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/fragment2_1son_t2"-->
+        <!--android:textSize="15dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:text="球队"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/fragment2_1son_t3"-->
+        <!--android:textSize="15dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:text="赛程"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/fragment2_1son_t4"-->
+        <!--android:textSize="13dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:text="胜- 平 -负"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+        <!--android:textSize="15dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:text="净胜球"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+        <!--android:textSize="15dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:text="积分"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+   <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:background="#ddd"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0.2dp"></View>-->
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/frament2son_refreshlayout1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/fragment2son_recyclerview1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+        <!--</android.support.v7.widget.RecyclerView>-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+<!--</FrameLayout>-->
+

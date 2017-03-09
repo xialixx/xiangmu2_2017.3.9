@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <LinearLayout
+        android:gravity="center"
+        android:background="#ddd"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </LinearLayout>
+    <FrameLayout
+        android:layout_weight="8.5"
+        android:id="@+id/frame_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></FrameLayout>
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/main_imageview1"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_outs_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/main_imageview11"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_outs_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/main_imageview2"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_discovery_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/main_imageview22"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_discovery_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/main_imageview3"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_foresight_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/main_imageview33"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_foresight_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/main_imageview4"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_more_down_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/main_imageview44"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_more_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

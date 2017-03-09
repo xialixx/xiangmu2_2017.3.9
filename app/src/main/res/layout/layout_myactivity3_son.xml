@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_weight="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:text="详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:id="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <WebView
+        android:layout_marginTop="15dp"
+        android:hardwareAccelerated="true"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    <android.support.design.widget.FloatingActionButton
+        app:backgroundTint="#30469b"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/floatingactionbutton"
+        android:elevation="8dp"
+        app:pressedTranslationZ="15dp"
+        app:rippleColor="#FFFF0101"
+        android:layout_gravity="right|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>
